@@ -1,0 +1,75 @@
+h1{
+    color: navy;
+    text-align: center;
+    margin-top: 20px;
+}
+h2{
+    color: red;
+}
+:any-link:visited{
+    color: orange;
+}
+:any-link:hover{
+    background-color: greenyellow;
+}
+ol{
+    color: chocolate;
+}
+li{
+    color: cornflowerblue;
+}
+li.cs{
+    color: crimson;
+}
+li.tm{
+    color: blueviolet;
+}
+#nom{
+    text-decoration: underline;
+}
+
+ol li{
+    list-style-type: lower-greek;
+}
+
+.gras{
+    color: dodgerblue;
+    font-weight: bold;
+}
+#matiere{
+    background-color: salmon;
+    display: yes;
+}
+
+table {
+    border-collapse: collapse;
+    width: fit-content;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+th {
+    color: blue;
+    letter-spacing: 2px;
+    border: 1px solid black;
+}
+
+td:not(:first-child)  {
+    background-color: #F0E3DF;
+}
+
+td {
+    border: 1px solid black;
+}
+
+td:first-child {
+    font-weight: bold;
+    color: blue;
+}
+
+td {
+    text-align: center;
+}
