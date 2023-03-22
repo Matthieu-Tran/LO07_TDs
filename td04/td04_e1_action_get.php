@@ -164,21 +164,8 @@
         <a id='exercice3' />
         <div class="card">
             <div class="card-body bg-info">
-                <h5 class="card-title">Exercice 3 : Sondage méthode POST</h6>
+                <h5 class="card-title">Exercice 3 : Formulaire de sondage et méthode POST</h6>
                     <div class='mx-lg-3'>
-                        <?php
-                        if ($_SERVER["REQUEST_METHOD"] == "GET") {
-                            $nom = $_POST["nom"];
-                            $prenom = $_POST["prenom"];
-                            $genre = $_POST["genre"];
-                            $vehicule = $_POST["vehicule"];
-                            $UT = $_POST["UT"];
-                            $letter = $_POST["letter"];
-                            $remboursement = $_POST["remboursement"];
-                        }
-                        echo implode("; ", $_GET)
-                        ?>
-
                         <table class="table table-bordered table-striped">
                             <thead>
                                 <tr>
@@ -195,8 +182,14 @@
                                     <tr>
                                         <th scope="row"><?php echo $i++; ?></th>
                                         <td><?php echo $key; ?></td>
-
-                                        <td><?php echo $value ?></td>
+                                        <td>
+                                            <?php if (is_array($value)) {
+                                                echo implode(",", $value);
+                                            } else {
+                                                echo $value;
+                                            }
+                                            ?>
+                                        </td>
                                     </tr>
                                 <?php
                                 }

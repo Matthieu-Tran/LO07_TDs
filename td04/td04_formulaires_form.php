@@ -63,7 +63,7 @@
         <h5 class="card-title">Exercice 1 : Formulaire de login et méthode GET</h5>
 
         <div class='mx-lg-3'>
-          <form action="td04_e1_action_get.php" method="GET">
+          <form action="lo07_analyse_formulaire1.php" method="GET">
             <div class="form-group">
               <label for="login">Login</label>
               <input type="text" class="form-control" name="login">
@@ -91,7 +91,7 @@
         <h5 class="card-title">Exercice 2 : Formulaire de login et méthode POST</h6>
           <div class='mx-lg-3'>
 
-            <form action="td04_e1_action_get.php" method="POST">
+            <form action="lo07_analyse_formulaire1.php" method="POST">
               <div class="form-group">
                 <label for="login">Login</label>
                 <input type="text" class="form-control" name="login">
@@ -120,7 +120,7 @@
         <h5 class="card-title">Exercice 3 : tableaux PHP</h6>
           <div class='mx-lg-3'>
 
-            <form action="td04_e1_action_get.php" method="GET">
+            <form action="lo07_analyse_formulaire1.php" method="POST">
               <div class="form-group">
                 <label for="Nom">Nom</label>
                 <input type="text" class="form-control" name="nom">
@@ -151,17 +151,17 @@
                 <label for="Statut" class=>Selectionnez votre statut</label>
                 <p />
 
-                <input type="radio" class="btn-check" name="status" id="Etudiant">
+                <input type="radio" class="btn-check" name="status" id="Etudiant" value="Etudiant">
                 <label class="btn btn-secondary" for="Etudiant">Etudiant</label>
 
-                <input type="radio" class="btn-check" name="status" id="Doctorant">
+                <input type="radio" class="btn-check" name="status" id="Doctorant" value="Doctorant">
                 <label class="btn btn-secondary" for="Doctorant">Doctorant</label>
 
-                <input type="radio" class="btn-check" name="status" id="Administratif">
+                <input type="radio" class="btn-check" name="status" id="Administratif" value="Administratif">
                 <label class="btn btn-secondary" for="Administratif">Admnistratif</label>
 
-                <input type="radio" class="btn-check" name="status" id="Enseignant">
-                <label class="btn btn-secondary" for="Enseignant">Ensignant</label>
+                <input type="radio" class="btn-check" name="status" id="Enseignant" value="Enseignant">
+                <label class="btn btn-secondary" for="Enseignant">Enseignant</label>
               </div>
 
 
@@ -181,7 +181,7 @@
 
               <div class="form-group mb-3">
                 <label for="exampleFormControlSelect2">Sélectionnez vos UT (plusieurs choix)</label>
-                <select class="form-control" name="UT" multiple>
+                <select class="form-control" name="UT[]" multiple>
                   <option>UTBM</option>
                   <option>UTC</option>
                   <option>UTT</option>
