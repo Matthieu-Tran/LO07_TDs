@@ -66,14 +66,22 @@
                     <h3>Éléments de Post</h3>
                     <?php
                     foreach ($_POST as $key => $value) {
-                        echo $value;
+                        if (is_array($value)) {
+                            echo implode(",", $value);
+                        } else {
+                            echo $value;
+                        }
                         echo "</p>";
                     }
                     ?>
                     <h3>Éléments de Get</h3>
                     <?php
                     foreach ($_GET as $key => $value) {
-                        echo $value;
+                        if (is_array($value)) {
+                            echo implode(",", $value);
+                        } else {
+                            echo $value;
+                        }
                         echo "</p>";
                     }
                     ?>
