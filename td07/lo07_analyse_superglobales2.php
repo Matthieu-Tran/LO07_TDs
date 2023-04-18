@@ -63,7 +63,7 @@ $_SESSION["traitementUE"] = $traitementUE;
         echo ("<div class='card-body bg-info'>");
         echo ("<h5 class='card-title'>SuperGlobale : $label</h5>");
 
-        echo ("<div class = 'col-4'>");
+        echo ("<div class = 'col-9'>");
         echo ("<table class = 'table table-bordered'>");
         echo ("<thead>");
         echo ("<tr>");
