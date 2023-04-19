@@ -20,9 +20,6 @@ class Cursus
         return $result;
     }
 
-
-
-
     public function affiche()
     {
         foreach ($this->listeModules as $sigle => $module) {
